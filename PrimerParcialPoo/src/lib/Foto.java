@@ -36,7 +36,7 @@ public class Foto extends  RecursosMultimedia {
     }
 
     public boolean isFotoValida() {
-        String[] aux = this.ruta.split(".");
+        String[] aux = this.ruta.split("\\.");
         String extension = aux[1];
         if (extension.equals("png") || extension.equals("jpg") || extension.equals("bmp") || extension.equals("gif") )
             return true;

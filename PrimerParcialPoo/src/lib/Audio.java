@@ -23,7 +23,7 @@ public class Audio extends RecursosMultimedia {
     }
 
     public boolean isAudioValido() {
-        String[] aux = this.ruta.split(".");
+        String[] aux = this.ruta.split("\\.");
         String extension = aux[1];
         if (extension.equals("mp3") || extension.equals("wav") )
             return true;
